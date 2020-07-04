@@ -1,20 +1,9 @@
 <?
 
-//read state
-$myfile = fopen("state.txt", "r");
-$cnt = 0;
-if ($myfile) {
-	$cnt = fread($myfile,filesize("state.txt")).trim();
-}
-fclose($myfile);
-
-//update state (count up)
+$file = '/opt/app-root/src/data/state.txt';
+$cnt = file_get_contents($file);
 $cnt++;
-
-//write state
-$fp = fopen('state.txt', 'w');
-fwrite($fp, $cnt);
-fclose($fp);
+file_put_contents($file, $cnt);
 
 ?>
 
