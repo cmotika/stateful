@@ -7,4 +7,4 @@ file_put_contents($file, $cnt);
 
 ?>
 
-Hello Lufthansa (called <? print($cnt); ?> times)
+Hello Lufthansa (called <?php print($cnt); ?> times)

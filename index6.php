@@ -15,4 +15,4 @@ $a = $a + 1;
 
 ?>
 
-Hello Lufthansa (called <? print($a.':'.$cnt); ?> times)
+Hello Lufthansa (called <?php print($a); ?> times)
