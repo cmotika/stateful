@@ -9,7 +9,7 @@ if (!$cnt) {
 $cnt = intval(trim($cnt));
 $cnt++;
 if (!file_put_contents($file, $cnt)) {
-  print("error wrinting state<br><br>");
+  print("error writing state<br><br>");
 }
 
 ?>
