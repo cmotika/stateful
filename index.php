@@ -1,4 +1,4 @@
-<?
+<?php
 
 $file = '/opt/app-root/src/data/state.txt';
 $cnt = file_get_contents($file);
