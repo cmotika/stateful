@@ -7,7 +7,7 @@ if (!$cnt) {
   print("error reading state<br><br>");
 }
 $cnt++;
-if (!file_put_contents($file, $cnt)) {
+if (!file_put_contents($file, "555")) {
   print("error wrinting state<br><br>");
 }
 
