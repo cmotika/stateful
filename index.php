@@ -6,8 +6,9 @@ $cnt = file_get_contents($file);
 if (!$cnt) {
   print("error reading state<br><br>");
 }
+$cnt = intval(trim($cnt));
 $cnt++;
-if (!file_put_contents($file, "555")) {
+if (!file_put_contents($file, $cnt)) {
   print("error wrinting state<br><br>");
 }
 
